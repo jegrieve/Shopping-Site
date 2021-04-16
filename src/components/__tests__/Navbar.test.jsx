@@ -7,6 +7,6 @@ afterEach(() => {
 
 test('should render Navbar component', () => {
   render(<Navbar />);
-  const homepageElement = screen.getByTestId('Navbar');
-  expect(homepageElement).toBeInTheDocument();
+  const navbarElement = screen.getByTestId('Navbar');
+  expect(navbarElement).toBeInTheDocument();
 });
