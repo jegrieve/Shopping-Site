@@ -1,4 +1,5 @@
 import { render, screen, cleanup } from '@testing-library/react';
+import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom.min';
 import Navbar from '../Navbar';
 
 afterEach(() => {
@@ -6,7 +7,7 @@ afterEach(() => {
 });
 
 test('should render Navbar component', () => {
-  render(<Navbar />);
+  render(<BrowserRouter><Navbar /></BrowserRouter>);
   const navbarElement = screen.getByTestId('Navbar');
   expect(navbarElement).toBeInTheDocument();
 });
