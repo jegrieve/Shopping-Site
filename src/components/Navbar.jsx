@@ -5,14 +5,8 @@ import DropDown from "./DropDown";
 
 
 const Navbar = (props) => {
-
-  const sideNavControl = () => {
-    props.setShowSideNav(!props.showSideNav)
-  }
-
   return (
     <div className="site-navbar d-flex justify-content-around align-items-center" data-testid="Navbar">
-      <button onClick = {sideNavControl}>Show Side Nav</button>
       <DropDown />
       <NavLink to="/">Home</NavLink>
       <NavLink to="/shop">Shop</NavLink>
