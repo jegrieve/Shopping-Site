@@ -6,11 +6,18 @@ const DropDown = () => {
         document.getElementById("nav-dropdown").classList.toggle("show");
     }
   
-    window.onclick = (e) => {
-      if (e.target.className !== "dropbtn") {
-        document.getElementById("nav-dropdown").classList.toggle("show");
+    window.onclick = (event) => {
+        if (!event.target.matches('.dropbtn')) {
+          let dropdowns = document.getElementsByClassName("dropdown-content");
+          let i;
+          for (let i = 0; i < dropdowns.length; i++) {
+            let openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
       }
-    }
 
     return (
         <div className="dropdown">
