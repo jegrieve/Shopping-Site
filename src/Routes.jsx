@@ -7,7 +7,7 @@ import HomePage from './components/HomePage';
 import Navbar from './components/Navbar';
 import ShopPage from './components/ShopPage';
 import CartPage from './components/CartPage';
-
+import CartNav from "./components/CartNav";
 
 const Routes = () => {
   const [showSideNav, setShowSideNav] = useState(false);
