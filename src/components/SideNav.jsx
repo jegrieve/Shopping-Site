@@ -1,9 +1,10 @@
 import React from 'react';
+import SideNavLinks from "./SideNavLinks";
 
 const SideNav = () => {
   return (
-  <div data-testid="SideNav">
-      This will show the sidenav
+  <div className = "side-nav" data-testid="SideNav">
+    <SideNavLinks />
   </div>
   );
 };

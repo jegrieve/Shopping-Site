@@ -10,21 +10,11 @@ import CartPage from './components/CartPage';
 import CartNav from "./components/CartNav";
 
 const Routes = () => {
-  const [showSideNav, setShowSideNav] = useState(false);
   return (
     <BrowserRouter>
-        <Navbar showSideNav = {showSideNav} setShowSideNav = {setShowSideNav}/>
-      <Switch>
-          <Route
-          exact
-          path="/"
-          render={(props) => (
-            <HomePage
-              {...props}
-              showSideNav = {showSideNav}
-            />
-          )}
-          />
+        <Navbar/>
+      <Switch>ss
+          <Route exact path="/" component={HomePage} />
           <Route exact path="/shop" component={ShopPage} />
           <Route exact path="/cart" component={CartPage} />
       </Switch>
