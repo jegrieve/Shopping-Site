@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import Cart from "./Cart"
 
 const CartNav = () => {
   const [showCartNav, setShowCartNav] = useState(false);
@@ -6,7 +7,7 @@ const CartNav = () => {
     {showCartNav ?
     <div>
       <button>Hide</button>
-      CartNav
+        <Cart />
       </div> :
     <div>
       <button>Show</button>
