@@ -11,7 +11,7 @@ const HomePage = (props) => {
         <div className = "row">
           <div id = "homepage-side-nav" className = "col-3"><SideNav /></div>
           <div className = "col-6"><Carousel /></div>
-          <div className = "col-3">This will be empty, show cartsidenav</div>
+          <div className = "col-3"><CartNav /></div>
         </div>
       </div>
     )

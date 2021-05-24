@@ -6,7 +6,7 @@ const SideBarDeal = () => {
   <div>
       <CountDown />
 
-      image here
+      image here (carousel of deals and goes to the specific thing)
   </div>
   )
 };
